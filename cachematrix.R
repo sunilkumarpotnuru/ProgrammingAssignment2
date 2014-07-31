@@ -33,7 +33,7 @@ cacheSolve <- function(x, ...) {
         inv <- x$getInverse()
         if(!is.null(inv)){
                 message("getting cached data")
-                return(m)
+                return(inv)
         }
         
         data <- x$get()
